@@ -921,6 +921,10 @@ export const lstrings = new LocalizedStrings({
         "Billing amount per",
         "will resume original charge once remaining balance is consumed",
       ],
+      couponTitle: "Promo Code",
+      couponPlaceholder: "enter promotion code here",
+      couponButton: ["Enter", "Remove"],
+      couponWarning: "Invalid promotion code!",
     },
     subscribenows: {
       ltitle: "THIS FEATURE IS EXCLUSIVE TO SUBSCRIBERS",
@@ -1602,6 +1606,10 @@ export const lstrings = new LocalizedStrings({
       billSubtotal: "現有訂閱餘額",
       billTotal: "應付金額",
       billTotalDesc: ["自動扣賬額將在餘額消耗完畢後恢復原本訂閱價格", ""],
+      couponTitle: "促銷代碼",
+      couponPlaceholder: "在此處輸入促銷代碼",
+      couponButton: ["輸入", "取消"],
+      couponWarning: "促銷代碼無效!",
     },
     subscribenows: {
       ltitle: "此為付費功能",
@@ -2279,6 +2287,10 @@ export const lstrings = new LocalizedStrings({
       billSubtotal: "现有订阅余额",
       billTotal: "应付金额",
       billTotalDesc: ["自动扣账额将在余额消耗完毕后恢复原本订阅价格", ""],
+      couponTitle: "促销代码",
+      couponPlaceholder: "在此处输入促销代码",
+      couponButton: ["输入", "取消"],
+      couponWarning: "促销代码无效!",
     },
 
     subscribenows: {

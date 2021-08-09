@@ -132,11 +132,11 @@ export default function PayRightCard(props) {
         </div>
       </div>
       <div className="card__coupon">
-        <span className="coupon__title">Promo Code</span>
+        <span className="coupon__title">{lstrings.up.couponTitle}</span>
         <form className="coupon__form" onSubmit={onCouponClick}>
           <Input
             className="coupon__input"
-            placeholder="enter promotion code here"
+            placeholder={lstrings.up.couponPlaceholder}
             disabled={discountValid}
             allowClear
             onChange={(e) => setCoupon(e.target.value)}
@@ -152,7 +152,7 @@ export default function PayRightCard(props) {
               loading={couponLoading}
               onClick={onCouponClick}
             >
-              Enter
+              {lstrings.up.couponButton[0]}
             </Button>
           ) : (
             <Button
@@ -161,7 +161,7 @@ export default function PayRightCard(props) {
               onClick={onResetClick}
               icon={<CloseCircleFilled className="coupon__icon" />}
             >
-              Remove
+              {lstrings.up.couponButton[1]}
             </Button>
           )}
         </form>
@@ -172,7 +172,7 @@ export default function PayRightCard(props) {
               : "coupon__warning__hidden"
           }
         >
-          Invalid Promo Code!
+          {lstrings.up.couponWarning + " " + couponData?.reason}
         </span>
       </div>
     </>
